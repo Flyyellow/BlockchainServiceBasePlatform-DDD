@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-02-24T06:16:11.037Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41" etag="q563zSSg-k1tHz0URBo1" version="20.8.23" type="github">
+<mxfile host="app.diagrams.net" modified="2023-02-24T06:19:47.092Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41" etag="4Uv03y1UgQLEzL02aePg" version="20.8.23" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="892" dy="555" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="760" dy="473" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -101,6 +101,36 @@
         </mxCell>
         <mxCell id="1w5Co0Go1dYFcQYBsp4H-70" value="+ user" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1w5Co0Go1dYFcQYBsp4H-69">
           <mxGeometry y="26" width="140" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="1w5Co0Go1dYFcQYBsp4H-71" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="1w5Co0Go1dYFcQYBsp4H-39" target="1w5Co0Go1dYFcQYBsp4H-48">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1210" y="570" as="sourcePoint" />
+            <mxPoint x="1350" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1w5Co0Go1dYFcQYBsp4H-72" value="Node:节点" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="620" y="620" width="390" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="1w5Co0Go1dYFcQYBsp4H-73" value="- nodeId:节点唯一标识&#xa;- nodeName:节点名称&#xa;- nodeNickName:节点别名&#xa;- orgId:组织唯一标识&#xa;- nodeRunningState:节点运行状态&#xa;- tenantId:租户唯一标识&#xa;- basePlatfomType:底链类型&#xa;- nodeType:节点类型&#xa;- dockerImage:节点使用的docker镜像（可能涉及到不同容器不同版本）&#xa;- bizChainId:业务链唯一标识&#xa;- server:虚拟机信息&#xa;- nodeRootDir:节点根目录" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1w5Co0Go1dYFcQYBsp4H-72">
+          <mxGeometry y="26" width="390" height="184" as="geometry" />
+        </mxCell>
+        <mxCell id="1w5Co0Go1dYFcQYBsp4H-74" value="" style="line;strokeWidth=1;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#82b366;" vertex="1" parent="1w5Co0Go1dYFcQYBsp4H-72">
+          <mxGeometry y="210" width="390" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="1w5Co0Go1dYFcQYBsp4H-75" value="+ saveNode():保存节点信息&#xa;+ queryNodeList():查询节点列表&#xa;+ queryNode():查询节点&#xa;+ updateNode():更新节点信息" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1w5Co0Go1dYFcQYBsp4H-72">
+          <mxGeometry y="218" width="390" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="1w5Co0Go1dYFcQYBsp4H-76" value="FabricNodeType:Fabric节点种类" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="400" y="820" width="140" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="1w5Co0Go1dYFcQYBsp4H-77" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1w5Co0Go1dYFcQYBsp4H-76">
+          <mxGeometry y="26" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="1w5Co0Go1dYFcQYBsp4H-78" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1w5Co0Go1dYFcQYBsp4H-76">
+          <mxGeometry y="52" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="1w5Co0Go1dYFcQYBsp4H-79" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1w5Co0Go1dYFcQYBsp4H-76">
+          <mxGeometry y="78" width="140" height="26" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
