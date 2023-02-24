@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-02-24T06:58:27.595Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41" etag="D0NtKqneHgJMqMrDtQJY" version="20.8.23" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2023-02-24T07:02:33.462Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41" etag="IuGhplRkjzHWFzIbabZE" version="20.8.23" type="github" pages="3">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="2565" dy="1595" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -288,7 +288,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="dj4ZiH3CLMO8sUYM5I7k" name="第 3 页">
-    <mxGraphModel dx="760" dy="473" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1080" dy="672" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -389,7 +389,7 @@
           <mxGeometry y="26" width="390" height="74" as="geometry" />
         </mxCell>
         <mxCell id="xm3kwY2wRbx-XHsszh4u-50" value="DataAuthorizeDetail" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="480" y="1580" width="320" height="210" as="geometry" />
+          <mxGeometry x="250" y="1600" width="320" height="210" as="geometry" />
         </mxCell>
         <mxCell id="xm3kwY2wRbx-XHsszh4u-51" value="- dataEmpowerDetailId:数据授权唯一标识&#xa;- viewId:租户用户操作视图唯一标识&#xa;- eneityType:实体类型&#xa;- topEntityId:顶级实体Id&#xa;- aoaFormId:代理操作申请单唯一标识&#xa;- dataAuthorizeState:数据授权状态" style="text;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xm3kwY2wRbx-XHsszh4u-50">
           <mxGeometry y="26" width="320" height="94" as="geometry" />
@@ -401,10 +401,40 @@
           <mxGeometry y="128" width="320" height="82" as="geometry" />
         </mxCell>
         <mxCell id="xm3kwY2wRbx-XHsszh4u-54" value="DataAuthorizeState:数据授权状态" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="220" y="1620" width="210" height="80" as="geometry" />
+          <mxGeometry x="20" y="1640" width="210" height="80" as="geometry" />
         </mxCell>
         <mxCell id="xm3kwY2wRbx-XHsszh4u-55" value="+ Authorized:已授权&#xa;+ RefusedAuthorisation:拒绝授权&#xa;+ null:未确认授权" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xm3kwY2wRbx-XHsszh4u-54">
           <mxGeometry y="26" width="210" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="xm3kwY2wRbx-XHsszh4u-58" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.469;exitY=1.001;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="xm3kwY2wRbx-XHsszh4u-41" target="xm3kwY2wRbx-XHsszh4u-50">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="420" y="1610" as="sourcePoint" />
+            <mxPoint x="580" y="1610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xm3kwY2wRbx-XHsszh4u-59" value="SmartContractTemplate:合约模版" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="420" y="1930" width="270" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="xm3kwY2wRbx-XHsszh4u-60" value="- contractTempId:合约模版唯一标识&#xa;- programingLanguage:合约编程语言&#xa;-&amp;nbsp;basePlatfomType:底链类型&#xa;- businessRemark:合约模板业务描述备注&#xa;- fileId:合约文件唯一标识" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xm3kwY2wRbx-XHsszh4u-59">
+          <mxGeometry y="26" width="270" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="xm3kwY2wRbx-XHsszh4u-61" value="" style="line;strokeWidth=1;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#82b366;" vertex="1" parent="xm3kwY2wRbx-XHsszh4u-59">
+          <mxGeometry y="110" width="270" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="xm3kwY2wRbx-XHsszh4u-62" value="+ saveContractTemplate():保存合约模板&#xa;+ queryContractTemplateList():查询合约模板列表&#xa;+ queryContractTemplate():查询合约模板&#xa;+ updateContractTemplate():更新合约模板&#xa;+ deleteContractTemplate():删除合约模版" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xm3kwY2wRbx-XHsszh4u-59">
+          <mxGeometry y="118" width="270" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="xm3kwY2wRbx-XHsszh4u-63" value="BasePlatformType:底链类型" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="170" y="1950" width="210" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xm3kwY2wRbx-XHsszh4u-64" value="+ hyperledger fabric&#xa;+ chainmaker&#xa;+ fisco bcos" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xm3kwY2wRbx-XHsszh4u-63">
+          <mxGeometry y="26" width="210" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="xm3kwY2wRbx-XHsszh4u-68" value="SmartContractTemplate Service" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="805" y="1960" width="300" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="xm3kwY2wRbx-XHsszh4u-69" value="+ createContractTemplate():创建合约模版&#xa;+ uploadContractTemplateFile():上传合约模版文件&#xa;+ downloadContractTemplateFile():下载合约模版文件&#xa;+ queryContractTemplateList():查询合约模板列表&#xa;+ queryContractTemplate():查询合约模板&#xa;+ updateContractTemplate():更新合约模板&#xa;+ deleteContractTemplate():删除合约模版" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xm3kwY2wRbx-XHsszh4u-68">
+          <mxGeometry y="26" width="300" height="114" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
