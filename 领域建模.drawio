@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-02-24T06:28:22.355Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41" etag="3Fkt630VAEiR1B6QfQNn" version="20.8.23" type="github">
+<mxfile host="app.diagrams.net" modified="2023-02-24T06:34:33.736Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41" etag="bpfw9tanPPgeg61cryI3" version="20.8.23" type="github" pages="2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="2565" dy="1595" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -155,6 +155,74 @@
         </mxCell>
         <mxCell id="1w5Co0Go1dYFcQYBsp4H-88" value="+ delivering:已到期&#xa;+ subscribed:已到期" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1w5Co0Go1dYFcQYBsp4H-87">
           <mxGeometry y="26" width="180" height="44" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="HwkSxeW7jcGuu1uCWA5L" name="第 2 页">
+    <mxGraphModel dx="1026" dy="638" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="VV3iAjv9le8pIiTt0zqh-1" value="BizChain:业务链" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="260" y="30" width="210" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="VV3iAjv9le8pIiTt0zqh-2" value="- bizChainId:业务链唯一标识&#xa;- bizChainName:业务链名称&#xa;- bizChainNickName:业务链链别名&#xa;- basePlatfomType:底链类型&#xa;- bizChainState:业务链配置&#xa;- tenantId:租户唯一标识&#xa;- consensusConfigure:共识配置&#xa;- chainGenesisConfigure:创世配置" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="VV3iAjv9le8pIiTt0zqh-1">
+          <mxGeometry y="26" width="210" height="124" as="geometry" />
+        </mxCell>
+        <mxCell id="VV3iAjv9le8pIiTt0zqh-3" value="" style="line;strokeWidth=1;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#82b366;" vertex="1" parent="VV3iAjv9le8pIiTt0zqh-1">
+          <mxGeometry y="150" width="210" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="VV3iAjv9le8pIiTt0zqh-4" value="+ saveChain():保存业务链&#xa;+ queryChainList():查询业务链列表&#xa;+ queryChain():查询业务链详细信息&#xa;+ updateChain():更新业务链&#xa;+ deleteChain():删除业务链" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="VV3iAjv9le8pIiTt0zqh-1">
+          <mxGeometry y="158" width="210" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="VV3iAjv9le8pIiTt0zqh-5" value="BasePlatformType:底链类型" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="98" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VV3iAjv9le8pIiTt0zqh-6" value="+ hyperledger fabric&#xa;+ chainmaker&#xa;+ fisco bcos" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="VV3iAjv9le8pIiTt0zqh-5">
+          <mxGeometry y="26" width="180" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="VV3iAjv9le8pIiTt0zqh-9" value="Chain Service" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#ffe6cc;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="560" y="130" width="280" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="VV3iAjv9le8pIiTt0zqh-10" value="+ createChain():创建业务链&#xa;+ queryChainList():查询业务链列表&#xa;+ bindOrgAndChain():绑定组织和业务链&#xa;+ bindNodeAndChain():绑定节点和业务链&#xa;+ nodeJoinChain():节点加入业务链&#xa;+ orgJoinChain():组织加入通道&#xa;+ instantiateChain():实例化业务链&#xa;+ leadOutChainData():导出业务链上数据&#xa;+ generateChainsisBlock():生成链创世区块&#xa;+ fileChainNodeData():归档业务链节点数据&#xa;+ createConsensusConfig():创建共识配置&#xa;+ updateConsensusConfig():更新共识配置&#xa;+ executeConsensusConfig():执行共识配置&#xa;+ createGensisConfig():创建创世块配置&#xa;+ updateGensisConfig():修改创世配置&#xa;+ generateGensisBlock():生成创世区块&#xa;+ createInvitationForm():创建邀请单&#xa;+ updateInvitationFormState():更新邀请单状态&#xa;+ createApplicationForm():创建申请单&#xa;+ updateApplicationFormState():更新申请单状态" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="VV3iAjv9le8pIiTt0zqh-9">
+          <mxGeometry y="26" width="280" height="294" as="geometry" />
+        </mxCell>
+        <mxCell id="VV3iAjv9le8pIiTt0zqh-17" value="InvitationForm:邀请单" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="140" y="340" width="250" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="VV3iAjv9le8pIiTt0zqh-18" value="- invitationId:邀请单唯一标识&#xa;- chainId:链唯一标识&#xa;- inviterTenant:邀请方&#xa;-&amp;nbsp;InviteeTenant:受邀方&#xa;- chain:链信息&#xa;- invitationState:邀请状态" style="text;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="VV3iAjv9le8pIiTt0zqh-17">
+          <mxGeometry y="26" width="250" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="VV3iAjv9le8pIiTt0zqh-19" value="" style="line;strokeWidth=1;fillColor=#f8cecc;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#b85450;" vertex="1" parent="VV3iAjv9le8pIiTt0zqh-17">
+          <mxGeometry y="120" width="250" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="VV3iAjv9le8pIiTt0zqh-20" value="+ saveInvitationForm():保存邀请单&#xa;+ queryInvitationFormList():查询邀请单列表&#xa;+ queryInvitation():查询邀请单详情&#xa;+ updateInvitation():更新邀请单&#xa;+ deleteInvitation():删除邀请单" style="text;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="VV3iAjv9le8pIiTt0zqh-17">
+          <mxGeometry y="128" width="250" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="VV3iAjv9le8pIiTt0zqh-21" value="ApplicationForm：申请单" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="160" y="600" width="240" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="VV3iAjv9le8pIiTt0zqh-22" value="- applicatioId:申请单唯一标识&#xa;- applyTenant:发起申请的租住&#xa;- chain:链信息&#xa;- applicationState:申请单状态&#xa;- orgId:组织唯一标识&#xa;- nodeIds:节点唯一标识列表" style="text;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="VV3iAjv9le8pIiTt0zqh-21">
+          <mxGeometry y="26" width="240" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="VV3iAjv9le8pIiTt0zqh-23" value="" style="line;strokeWidth=1;fillColor=#f8cecc;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#b85450;" vertex="1" parent="VV3iAjv9le8pIiTt0zqh-21">
+          <mxGeometry y="120" width="240" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="VV3iAjv9le8pIiTt0zqh-24" value="+ saveApplicationForm():保存申请单&#xa;+ queryApplicationFormList():查询申请单列表&#xa;+ queryApplication():查询申请单详情&#xa;+ updateApplication():更新申请单&#xa;+ deleteApplication():删除申请单" style="text;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="VV3iAjv9le8pIiTt0zqh-21">
+          <mxGeometry y="128" width="240" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="VV3iAjv9le8pIiTt0zqh-25" value="ConsensusConfigure:共识配置" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="630" width="200" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="VV3iAjv9le8pIiTt0zqh-26" value="- genesisConfigId:共识配置唯一标识&#xa;- chainId:链唯一标识&#xa;- content:共识配置内容    " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="VV3iAjv9le8pIiTt0zqh-25">
+          <mxGeometry y="26" width="200" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="VV3iAjv9le8pIiTt0zqh-27" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="VV3iAjv9le8pIiTt0zqh-25">
+          <mxGeometry y="80" width="200" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="VV3iAjv9le8pIiTt0zqh-28" value="+ saveConfig():保存共识配置&#xa;+ queryConfig():查询共识配置&#xa;+ updateConfig():更新共识配置" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="VV3iAjv9le8pIiTt0zqh-25">
+          <mxGeometry y="88" width="200" height="62" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
