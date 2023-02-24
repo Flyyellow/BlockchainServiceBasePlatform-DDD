@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-02-24T06:51:24.367Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41" etag="WmhhHRIZjZyz-dwu5yPn" version="20.8.23" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2023-02-24T06:52:06.707Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41" etag="xcyla3dXxoLryjjfCVvb" version="20.8.23" type="github" pages="3">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="2565" dy="1595" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -383,16 +383,10 @@
           <mxGeometry y="138" width="310" height="72" as="geometry" />
         </mxCell>
         <mxCell id="xm3kwY2wRbx-XHsszh4u-42" value="AgentOperationApplicationForm Service" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="707" y="1340" width="253" height="104" as="geometry" />
+          <mxGeometry x="630" y="1320" width="390" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="xm3kwY2wRbx-XHsszh4u-43" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xm3kwY2wRbx-XHsszh4u-42">
-          <mxGeometry y="26" width="253" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="xm3kwY2wRbx-XHsszh4u-44" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xm3kwY2wRbx-XHsszh4u-42">
-          <mxGeometry y="52" width="253" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="xm3kwY2wRbx-XHsszh4u-45" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xm3kwY2wRbx-XHsszh4u-42">
-          <mxGeometry y="78" width="253" height="26" as="geometry" />
+        <mxCell id="xm3kwY2wRbx-XHsszh4u-43" value="+ createAgentOperationApplicationForm():初始化代理操作申请单&#xa;+ updateAoaFormState():更新代理操作申请单状态&#xa;+ queryDataAuthorizeDetailList():查询数据授权详情列表&#xa;+ updateDataAutherizeDetail():更新数据授权" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xm3kwY2wRbx-XHsszh4u-42">
+          <mxGeometry y="26" width="390" height="74" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
