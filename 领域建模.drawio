@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-02-24T06:37:18.568Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41" etag="xmEnSNsTadVZe4X9MM7S" version="20.8.23" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2023-02-24T06:43:59.167Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41" etag="wwLq3qmGw-bI8eu349cF" version="20.8.23" type="github" pages="3">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="2565" dy="1595" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -160,12 +160,12 @@
     </mxGraphModel>
   </diagram>
   <diagram id="HwkSxeW7jcGuu1uCWA5L" name="第 2 页">
-    <mxGraphModel dx="1026" dy="638" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3420" dy="2127" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="VV3iAjv9le8pIiTt0zqh-1" value="BizChain:业务链" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="260" y="30" width="210" height="240" as="geometry" />
+          <mxGeometry x="600" y="70" width="210" height="240" as="geometry" />
         </mxCell>
         <mxCell id="VV3iAjv9le8pIiTt0zqh-2" value="- bizChainId:业务链唯一标识&#xa;- bizChainName:业务链名称&#xa;- bizChainNickName:业务链链别名&#xa;- basePlatfomType:底链类型&#xa;- bizChainState:业务链配置&#xa;- tenantId:租户唯一标识&#xa;- consensusConfigure:共识配置&#xa;- chainGenesisConfigure:创世配置" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="VV3iAjv9le8pIiTt0zqh-1">
           <mxGeometry y="26" width="210" height="124" as="geometry" />
@@ -177,19 +177,19 @@
           <mxGeometry y="158" width="210" height="82" as="geometry" />
         </mxCell>
         <mxCell id="VV3iAjv9le8pIiTt0zqh-5" value="BasePlatformType:底链类型" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="40" y="98" width="180" height="80" as="geometry" />
+          <mxGeometry x="380" y="138" width="180" height="80" as="geometry" />
         </mxCell>
         <mxCell id="VV3iAjv9le8pIiTt0zqh-6" value="+ hyperledger fabric&#xa;+ chainmaker&#xa;+ fisco bcos" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="VV3iAjv9le8pIiTt0zqh-5">
           <mxGeometry y="26" width="180" height="54" as="geometry" />
         </mxCell>
         <mxCell id="VV3iAjv9le8pIiTt0zqh-9" value="Chain Service" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#ffe6cc;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#d79b00;" vertex="1" parent="1">
-          <mxGeometry x="560" y="130" width="280" height="320" as="geometry" />
+          <mxGeometry x="900" y="170" width="280" height="320" as="geometry" />
         </mxCell>
         <mxCell id="VV3iAjv9le8pIiTt0zqh-10" value="+ createChain():创建业务链&#xa;+ queryChainList():查询业务链列表&#xa;+ bindOrgAndChain():绑定组织和业务链&#xa;+ bindNodeAndChain():绑定节点和业务链&#xa;+ nodeJoinChain():节点加入业务链&#xa;+ orgJoinChain():组织加入通道&#xa;+ instantiateChain():实例化业务链&#xa;+ leadOutChainData():导出业务链上数据&#xa;+ generateChainsisBlock():生成链创世区块&#xa;+ fileChainNodeData():归档业务链节点数据&#xa;+ createConsensusConfig():创建共识配置&#xa;+ updateConsensusConfig():更新共识配置&#xa;+ executeConsensusConfig():执行共识配置&#xa;+ createGensisConfig():创建创世块配置&#xa;+ updateGensisConfig():修改创世配置&#xa;+ generateGensisBlock():生成创世区块&#xa;+ createInvitationForm():创建邀请单&#xa;+ updateInvitationFormState():更新邀请单状态&#xa;+ createApplicationForm():创建申请单&#xa;+ updateApplicationFormState():更新申请单状态" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="VV3iAjv9le8pIiTt0zqh-9">
           <mxGeometry y="26" width="280" height="294" as="geometry" />
         </mxCell>
         <mxCell id="VV3iAjv9le8pIiTt0zqh-17" value="InvitationForm:邀请单" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="140" y="340" width="250" height="210" as="geometry" />
+          <mxGeometry x="480" y="380" width="250" height="210" as="geometry" />
         </mxCell>
         <mxCell id="VV3iAjv9le8pIiTt0zqh-18" value="- invitationId:邀请单唯一标识&#xa;- chainId:链唯一标识&#xa;- inviterTenant:邀请方&#xa;-&amp;nbsp;InviteeTenant:受邀方&#xa;- chain:链信息&#xa;- invitationState:邀请状态" style="text;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="VV3iAjv9le8pIiTt0zqh-17">
           <mxGeometry y="26" width="250" height="94" as="geometry" />
@@ -201,7 +201,7 @@
           <mxGeometry y="128" width="250" height="82" as="geometry" />
         </mxCell>
         <mxCell id="VV3iAjv9le8pIiTt0zqh-21" value="ApplicationForm：申请单" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="320" y="610" width="240" height="210" as="geometry" />
+          <mxGeometry x="660" y="650" width="240" height="210" as="geometry" />
         </mxCell>
         <mxCell id="VV3iAjv9le8pIiTt0zqh-22" value="- applicatioId:申请单唯一标识&#xa;- applyTenant:发起申请的租住&#xa;- chain:链信息&#xa;- applicationState:申请单状态&#xa;- orgId:组织唯一标识&#xa;- nodeIds:节点唯一标识列表" style="text;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="VV3iAjv9le8pIiTt0zqh-21">
           <mxGeometry y="26" width="240" height="94" as="geometry" />
@@ -213,7 +213,7 @@
           <mxGeometry y="128" width="240" height="82" as="geometry" />
         </mxCell>
         <mxCell id="VV3iAjv9le8pIiTt0zqh-25" value="ConsensusConfigure:共识配置" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="660" y="670" width="200" height="150" as="geometry" />
+          <mxGeometry x="1000" y="710" width="200" height="150" as="geometry" />
         </mxCell>
         <mxCell id="VV3iAjv9le8pIiTt0zqh-26" value="- genesisConfigId:共识配置唯一标识&#xa;- chainId:链唯一标识&#xa;- content:共识配置内容    " style="text;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="VV3iAjv9le8pIiTt0zqh-25">
           <mxGeometry y="26" width="200" height="54" as="geometry" />
@@ -225,7 +225,7 @@
           <mxGeometry y="88" width="200" height="62" as="geometry" />
         </mxCell>
         <mxCell id="VV3iAjv9le8pIiTt0zqh-29" value="ChainGenesisConfigure:创世配置" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="880" y="500" width="250" height="140" as="geometry" />
+          <mxGeometry x="1220" y="540" width="250" height="140" as="geometry" />
         </mxCell>
         <mxCell id="VV3iAjv9le8pIiTt0zqh-30" value="- genesisConfigId:创世配置唯一标识&#xa;- chainId:链唯一标识&#xa;- genesisBlockFileId:创世块文件唯一标识" style="text;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="VV3iAjv9le8pIiTt0zqh-29">
           <mxGeometry y="26" width="250" height="54" as="geometry" />
@@ -238,39 +238,89 @@
         </mxCell>
         <mxCell id="VV3iAjv9le8pIiTt0zqh-34" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=-0.012;exitY=0.721;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="VV3iAjv9le8pIiTt0zqh-10" target="VV3iAjv9le8pIiTt0zqh-18">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="570" y="580" as="sourcePoint" />
-            <mxPoint x="730" y="580" as="targetPoint" />
+            <mxPoint x="910" y="620" as="sourcePoint" />
+            <mxPoint x="1070" y="620" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="VV3iAjv9le8pIiTt0zqh-35" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="VV3iAjv9le8pIiTt0zqh-10" target="VV3iAjv9le8pIiTt0zqh-21">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="570" y="580" as="sourcePoint" />
-            <mxPoint x="730" y="580" as="targetPoint" />
+            <mxPoint x="910" y="620" as="sourcePoint" />
+            <mxPoint x="1070" y="620" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="VV3iAjv9le8pIiTt0zqh-36" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.441;exitY=0.997;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.383;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="VV3iAjv9le8pIiTt0zqh-10" target="VV3iAjv9le8pIiTt0zqh-25">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="570" y="580" as="sourcePoint" />
-            <mxPoint x="730" y="580" as="targetPoint" />
+            <mxPoint x="910" y="620" as="sourcePoint" />
+            <mxPoint x="1070" y="620" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="VV3iAjv9le8pIiTt0zqh-37" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="VV3iAjv9le8pIiTt0zqh-29">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="840" y="380" as="sourcePoint" />
-            <mxPoint x="730" y="580" as="targetPoint" />
+            <mxPoint x="1180" y="420" as="sourcePoint" />
+            <mxPoint x="1070" y="620" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="VV3iAjv9le8pIiTt0zqh-38" value="SmartContract:合约" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="570" y="960" width="270" height="214" as="geometry" />
+        <mxCell id="VV3iAjv9le8pIiTt0zqh-38" value="SmartContract:合约" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="570" y="1180" width="270" height="270" as="geometry" />
         </mxCell>
-        <mxCell id="VV3iAjv9le8pIiTt0zqh-39" value="- contractId:合约唯一标识&#xa;- contractName:合约名称&#xa;- programingLanguage:合约编程语言&#xa;- basePlatfomType:底链类型&#xa;- chainId:链唯一标识&#xa;- businessAttributeRemark:合约业务属性备注&#xa;- contractVersionNum:合约版本编号&#xa;- contractSequence:合约序列号&#xa;- contractEndorsementPolicy: 合约背书策略&#xa;- contractAddress:合约地址(待技术验证)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="VV3iAjv9le8pIiTt0zqh-38">
+        <mxCell id="VV3iAjv9le8pIiTt0zqh-39" value="- contractId:合约唯一标识&#xa;- contractName:合约名称&#xa;- programingLanguage:合约编程语言&#xa;- basePlatfomType:底链类型&#xa;- chainId:链唯一标识&#xa;- businessAttributeRemark:合约业务属性备注&#xa;- contractVersionNum:合约版本编号&#xa;- contractSequence:合约序列号&#xa;- contractEndorsementPolicy: 合约背书策略&#xa;- contractAddress:合约地址(待技术验证)" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="VV3iAjv9le8pIiTt0zqh-38">
           <mxGeometry y="26" width="270" height="154" as="geometry" />
         </mxCell>
-        <mxCell id="VV3iAjv9le8pIiTt0zqh-40" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="VV3iAjv9le8pIiTt0zqh-38">
+        <mxCell id="VV3iAjv9le8pIiTt0zqh-40" value="" style="line;strokeWidth=1;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#82b366;" vertex="1" parent="VV3iAjv9le8pIiTt0zqh-38">
           <mxGeometry y="180" width="270" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="VV3iAjv9le8pIiTt0zqh-41" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="VV3iAjv9le8pIiTt0zqh-38">
-          <mxGeometry y="188" width="270" height="26" as="geometry" />
+        <mxCell id="VV3iAjv9le8pIiTt0zqh-41" value="+ saveContract():保存合约&#xa;+ queryContractList():查询合约列表&#xa;+ queryContract():查询合约&#xa;+ updateContract():更新合约&#xa;+ deleteContract():删除合约" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="VV3iAjv9le8pIiTt0zqh-38">
+          <mxGeometry y="188" width="270" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="VV3iAjv9le8pIiTt0zqh-42" value="BasePlatformType:底链类型" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="370" y="1200" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VV3iAjv9le8pIiTt0zqh-43" value="+ hyperledger fabric&#xa;+ chainmaker&#xa;+ fisco bcos" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="VV3iAjv9le8pIiTt0zqh-42">
+          <mxGeometry y="26" width="180" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="ZpC3P7WhNXR5FPqb7qeK-1" value="SmartContract Service" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#ffe6cc;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="920" y="1220" width="270" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ZpC3P7WhNXR5FPqb7qeK-2" value="+ installContract():安装合约&#xa;+ updateContract():更新合约&#xa;+ uploadContractFile():上传合约文件到文件服务&#xa;+ createContract():创建合约&#xa;+ queryContract():查询合约&#xa;+ queryContractList():查询合约列表&#xa;+ verifyContractFile():校验合约文件" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ZpC3P7WhNXR5FPqb7qeK-1">
+          <mxGeometry y="26" width="270" height="114" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="dj4ZiH3CLMO8sUYM5I7k" name="第 3 页">
+    <mxGraphModel dx="1026" dy="638" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="xm3kwY2wRbx-XHsszh4u-1" value="VotingForm:投票单" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="340" y="280" width="240" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="xm3kwY2wRbx-XHsszh4u-2" value="- votingFormId:投票单唯一标识&#xa;- voteContent:投票内容&#xa;- votingFormType:投票单类型&#xa;- voterResultList:投票租户列表" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xm3kwY2wRbx-XHsszh4u-1">
+          <mxGeometry y="26" width="240" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="xm3kwY2wRbx-XHsszh4u-3" value="" style="line;strokeWidth=1;fillColor=#d5e8d4;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#82b366;" vertex="1" parent="xm3kwY2wRbx-XHsszh4u-1">
+          <mxGeometry y="90" width="240" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="xm3kwY2wRbx-XHsszh4u-4" value="+ saveVotingForm():保存投票单&#xa;+ queryVotingFormList():查询投票单列表&#xa;+ queryVotingForm():查询投票单&#xa;+ updateVotingForm():更新投票单&#xa;+ deleteVotingForm():删除投票单" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xm3kwY2wRbx-XHsszh4u-1">
+          <mxGeometry y="98" width="240" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="xm3kwY2wRbx-XHsszh4u-5" value="VotingFormType:投票单类型" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="280" width="240" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="xm3kwY2wRbx-XHsszh4u-6" value="+ instantiateChain:实例化业务链&#xa;+ inviteTenantToChain:邀请租户加入业务链&#xa;+ tenantApplyJoinChain:租户申请加入业务链&#xa;+ installContract:安装合约" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xm3kwY2wRbx-XHsszh4u-5">
+          <mxGeometry y="26" width="240" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="xm3kwY2wRbx-XHsszh4u-9" value="VotingDetail:投票明细" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="334" y="560" width="250" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="xm3kwY2wRbx-XHsszh4u-10" value="+ votingDetailId:投票明细唯一标识&#xa;+ tenantId:参与投票的租户唯一标识&#xa;+ result:投票结果，true/false/null&#xa;+ tenantRemark:租户投票备注" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xm3kwY2wRbx-XHsszh4u-9">
+          <mxGeometry y="26" width="250" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="xm3kwY2wRbx-XHsszh4u-11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="xm3kwY2wRbx-XHsszh4u-9">
+          <mxGeometry y="100" width="250" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="xm3kwY2wRbx-XHsszh4u-12" value="+ saveVotingDetail():保存投票明细&#xa;+ queryVotingDetailList():查询投票明细列表&#xa;+ queryVotingDetail():查询投票明细&#xa;+ updateVotingDetail():更新投票明细&#xa;+ deleteVotingDetail():删除投票明细" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xm3kwY2wRbx-XHsszh4u-9">
+          <mxGeometry y="108" width="250" height="82" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
