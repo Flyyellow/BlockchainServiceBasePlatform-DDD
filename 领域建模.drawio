@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-02-24T06:43:59.167Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41" etag="wwLq3qmGw-bI8eu349cF" version="20.8.23" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2023-02-24T06:46:38.848Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41" etag="xV_pG4PJNDHkMnlwrjgK" version="20.8.23" type="github" pages="3">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="2565" dy="1595" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -310,17 +310,41 @@
         <mxCell id="xm3kwY2wRbx-XHsszh4u-6" value="+ instantiateChain:实例化业务链&#xa;+ inviteTenantToChain:邀请租户加入业务链&#xa;+ tenantApplyJoinChain:租户申请加入业务链&#xa;+ installContract:安装合约" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xm3kwY2wRbx-XHsszh4u-5">
           <mxGeometry y="26" width="240" height="74" as="geometry" />
         </mxCell>
-        <mxCell id="xm3kwY2wRbx-XHsszh4u-9" value="VotingDetail:投票明细" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="334" y="560" width="250" height="190" as="geometry" />
+        <mxCell id="xm3kwY2wRbx-XHsszh4u-9" value="VotingDetail:投票明细" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="334" y="560" width="250" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="xm3kwY2wRbx-XHsszh4u-10" value="+ votingDetailId:投票明细唯一标识&#xa;+ tenantId:参与投票的租户唯一标识&#xa;+ result:投票结果，true/false/null&#xa;+ tenantRemark:租户投票备注" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xm3kwY2wRbx-XHsszh4u-9">
+        <mxCell id="xm3kwY2wRbx-XHsszh4u-10" value="+ votingDetailId:投票明细唯一标识&#xa;+ tenantId:参与投票的租户唯一标识&#xa;+ result:投票结果，true/false/null&#xa;+ tenantRemark:租户投票备注" style="text;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xm3kwY2wRbx-XHsszh4u-9">
+          <mxGeometry y="26" width="250" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="xm3kwY2wRbx-XHsszh4u-11" value="" style="line;strokeWidth=1;fillColor=#f8cecc;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#b85450;" vertex="1" parent="xm3kwY2wRbx-XHsszh4u-9">
+          <mxGeometry y="90" width="250" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="xm3kwY2wRbx-XHsszh4u-12" value="+ saveVotingDetail():保存投票明细&#xa;+ queryVotingDetailList():查询投票明细列表&#xa;+ queryVotingDetail():查询投票明细&#xa;+ updateVotingDetail():更新投票明细&#xa;+ deleteVotingDetail():删除投票明细" style="text;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xm3kwY2wRbx-XHsszh4u-9">
+          <mxGeometry y="98" width="250" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="xm3kwY2wRbx-XHsszh4u-13" value="VotingForm Service" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#ffe6cc;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="690" y="470" width="250" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="xm3kwY2wRbx-XHsszh4u-14" value="+ createVotingForm():创建投票单&#xa;+ initVotingDetail():初始化投票明细&#xa;+ updateVotingFormState():更新投票单状态&#xa;+ analyseVoteResult():统计分析投票结果" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xm3kwY2wRbx-XHsszh4u-13">
           <mxGeometry y="26" width="250" height="74" as="geometry" />
         </mxCell>
-        <mxCell id="xm3kwY2wRbx-XHsszh4u-11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="xm3kwY2wRbx-XHsszh4u-9">
-          <mxGeometry y="100" width="250" height="8" as="geometry" />
+        <mxCell id="xm3kwY2wRbx-XHsszh4u-17" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.44;entryY=-0.006;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="xm3kwY2wRbx-XHsszh4u-9">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="440" y="460" as="sourcePoint" />
+            <mxPoint x="840" y="520" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="xm3kwY2wRbx-XHsszh4u-12" value="+ saveVotingDetail():保存投票明细&#xa;+ queryVotingDetailList():查询投票明细列表&#xa;+ queryVotingDetail():查询投票明细&#xa;+ updateVotingDetail():更新投票明细&#xa;+ deleteVotingDetail():删除投票明细" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xm3kwY2wRbx-XHsszh4u-9">
-          <mxGeometry y="108" width="250" height="82" as="geometry" />
+        <mxCell id="xm3kwY2wRbx-XHsszh4u-18" value="Certificate:证书" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="280" y="880" width="230" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="xm3kwY2wRbx-XHsszh4u-19" value="- certId:证书唯一标识&#xa;- entityType:证书所属实体类型&#xa;- entityId:证书所属实体唯一标识&#xa;- entityName:实体名称&#xa;- encryptionAlgorithmType:加密算法类型&#xa;- certOrigin:证书来源&#xa;- fileId:证书文件唯一标识&#xa;- certState:证书状态&#xa;- expiringDate:到期时间&#xa;- expiryDate:有效期" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xm3kwY2wRbx-XHsszh4u-18">
+          <mxGeometry y="26" width="230" height="154" as="geometry" />
+        </mxCell>
+        <mxCell id="xm3kwY2wRbx-XHsszh4u-20" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="xm3kwY2wRbx-XHsszh4u-18">
+          <mxGeometry y="180" width="230" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="xm3kwY2wRbx-XHsszh4u-21" value="+ saveCert():保存证书&#xa;+ queryCertList():查询证书列表&#xa;+ queryCert():查询证书&#xa;+ updateCertInfo():更新证书信息&#xa;+ deleteCert():删除证书" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="xm3kwY2wRbx-XHsszh4u-18">
+          <mxGeometry y="188" width="230" height="82" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
