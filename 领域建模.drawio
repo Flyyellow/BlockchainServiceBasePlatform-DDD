@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2023-02-24T06:09:27.570Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41" etag="xa_9HAmTsDZEEr0l-62K" version="20.8.23" type="github">
+<mxfile host="app.diagrams.net" modified="2023-02-24T06:16:11.037Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41" etag="q563zSSg-k1tHz0URBo1" version="20.8.23" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="662" dy="412" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="892" dy="555" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="1w5Co0Go1dYFcQYBsp4H-0" value="BcsSubscriptionForm:区块链服务订阅单" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="340" y="80" width="290" height="230" as="geometry">
+          <mxGeometry x="380" y="40" width="290" height="230" as="geometry">
             <mxRectangle x="80" y="100" width="270" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -19,19 +19,19 @@
           <mxGeometry y="138" width="290" height="92" as="geometry" />
         </mxCell>
         <mxCell id="1w5Co0Go1dYFcQYBsp4H-15" value="BcsSubscriptionFormState:区块链服务订阅单状态" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="10" y="90" width="310" height="120" as="geometry" />
+          <mxGeometry x="30" y="40" width="310" height="120" as="geometry" />
         </mxCell>
         <mxCell id="1w5Co0Go1dYFcQYBsp4H-16" value="+ inited:已初始化&#xa;+ submitted:已提交&#xa;+ reviewing:审核中&#xa;+ reviewed:已审核&#xa;+ delivering:交付中&#xa;+ subscribed:已订阅" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1w5Co0Go1dYFcQYBsp4H-15">
           <mxGeometry y="26" width="310" height="94" as="geometry" />
         </mxCell>
         <mxCell id="1w5Co0Go1dYFcQYBsp4H-21" value="BcsSubscriptionForm Service" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#ffe6cc;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#d79b00;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="640" y="85" width="270" height="130" as="geometry" />
+          <mxGeometry x="720" y="35" width="270" height="130" as="geometry" />
         </mxCell>
         <mxCell id="1w5Co0Go1dYFcQYBsp4H-22" value="+ initBcsSubscriptionForm():初始化区块链服务订阅单&#xa;+ submitSubscriptionForm():提交订阅单&#xa;+ updateSubscriptionFormState():更新订阅单状态&#xa;+ createIaaSOrder():解析区块链服务订阅单，生成IaaS资源订单和&#xa;+ analyseIaaSBackToVMServer():解析IaaS订单回执，生成虚拟机信息&#xa;+ initIaaSSource():初始化IaaS资源信息" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1w5Co0Go1dYFcQYBsp4H-21">
           <mxGeometry y="26" width="270" height="104" as="geometry" />
         </mxCell>
         <mxCell id="1w5Co0Go1dYFcQYBsp4H-26" value="IaaSSource:IaaS资源规格信息" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="240" y="385" width="270" height="200" as="geometry" />
+          <mxGeometry x="390" y="370" width="270" height="200" as="geometry" />
         </mxCell>
         <mxCell id="1w5Co0Go1dYFcQYBsp4H-27" value="- sourceId: iaas资源规格唯一标识&#xa;- coreNum:cpu核心数&#xa;- memorySize:内存容量&#xa;- diskSize: 硬盘容量&#xa;- bcssFormId:区块链服务订阅单唯一标识" style="text;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1w5Co0Go1dYFcQYBsp4H-26">
           <mxGeometry y="26" width="270" height="84" as="geometry" />
@@ -42,14 +42,8 @@
         <mxCell id="1w5Co0Go1dYFcQYBsp4H-29" value="+ saveIaaSSource():保存IaaS资源信息&#xa;+ queryIaaSSourceList():查询IaaS资源列表&#xa;+ queryIaaSSource():查询laaS资源&#xa;+ updateIaaSSource():更新IaaS资源&#xa;+ deleteIaaSSource():删除IaaS资源" style="text;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1w5Co0Go1dYFcQYBsp4H-26">
           <mxGeometry y="118" width="270" height="82" as="geometry" />
         </mxCell>
-        <mxCell id="1w5Co0Go1dYFcQYBsp4H-34" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.453;exitY=0.991;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="1w5Co0Go1dYFcQYBsp4H-3" target="1w5Co0Go1dYFcQYBsp4H-26">
-          <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="430" y="420" as="sourcePoint" />
-            <mxPoint x="590" y="420" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="1w5Co0Go1dYFcQYBsp4H-36" value="Organization:组织" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="1070" y="420" width="160" height="210" as="geometry" />
+          <mxGeometry x="1130" y="325" width="160" height="210" as="geometry" />
         </mxCell>
         <mxCell id="1w5Co0Go1dYFcQYBsp4H-37" value="- orgId:组织唯一标识&#xa;- orgName:组织名称&#xa;- orgNickName:组织别名&#xa;- delFlag:删除标记&#xa;- tenantId:租户唯一标识&#xa;- orgUserList:组织用户列表" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1w5Co0Go1dYFcQYBsp4H-36">
           <mxGeometry y="26" width="160" height="94" as="geometry" />
@@ -61,19 +55,19 @@
           <mxGeometry y="128" width="160" height="82" as="geometry" />
         </mxCell>
         <mxCell id="1w5Co0Go1dYFcQYBsp4H-40" value="FabricOrgUserRole:fabric组织用户角色" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="820" y="440" width="240" height="70" as="geometry" />
+          <mxGeometry x="840" y="350" width="240" height="70" as="geometry" />
         </mxCell>
         <mxCell id="1w5Co0Go1dYFcQYBsp4H-41" value="+ admin:组织管理员&#xa;+ member:组织普通成员" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1w5Co0Go1dYFcQYBsp4H-40">
           <mxGeometry y="26" width="240" height="44" as="geometry" />
         </mxCell>
         <mxCell id="1w5Co0Go1dYFcQYBsp4H-44" value="Organization Service" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#f8cecc;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#b85450;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="1241" y="430" width="230" height="190" as="geometry" />
+          <mxGeometry x="1360" y="335" width="230" height="190" as="geometry" />
         </mxCell>
         <mxCell id="1w5Co0Go1dYFcQYBsp4H-45" value="+ createOrg():创建组织&#xa;+ queryOrg():查询组织&#xa;+ queryOrgList():查询组织列表&#xa;+ updateOrg():修改组织信息&#xa;+ deleteOrg():删除组织&#xa;+ bindOrgAndNode:给组织添加节点&#xa;+ createOrgUser():初始化组织用户&#xa;+ updateOrgUser():修改组织用户信息&#xa;+ queryOrgUserList():查询组织用户列表&#xa;+ queryOrgUser():查询组织用户&#xa;+ deleteOrgUser():删除组织用户" style="text;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1w5Co0Go1dYFcQYBsp4H-44">
           <mxGeometry y="26" width="230" height="164" as="geometry" />
         </mxCell>
         <mxCell id="1w5Co0Go1dYFcQYBsp4H-48" value="OrgUser:组织用户" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="1080" y="660" width="210" height="210" as="geometry" />
+          <mxGeometry x="1120" y="635" width="210" height="210" as="geometry" />
         </mxCell>
         <mxCell id="1w5Co0Go1dYFcQYBsp4H-49" value="- orgUserId:组织用户唯一标识&#xa;- orgUserName:组织用户名称&#xa;- orgUserNickName:组织用户别名&#xa;- orgUserRole:组织用户角色&#xa;- delFlag:删除标记&#xa;- basePlatfomType:底链类型" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1w5Co0Go1dYFcQYBsp4H-48">
           <mxGeometry y="26" width="210" height="94" as="geometry" />
@@ -83,6 +77,30 @@
         </mxCell>
         <mxCell id="1w5Co0Go1dYFcQYBsp4H-51" value="+ saveOrgUser():保存组织用户&#xa;+ queryOrgUserList():查询组织用户列表&#xa;+ queryOrgUser():查询组织用户详情&#xa;+ updateOrgUser():更新组织用户信息&#xa;+ deleteOrgUser():删除组织用户" style="text;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1w5Co0Go1dYFcQYBsp4H-48">
           <mxGeometry y="128" width="210" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="1w5Co0Go1dYFcQYBsp4H-54" value="BasePlatformType:底链类型" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1370" y="630" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="1w5Co0Go1dYFcQYBsp4H-55" value="+ hyperledger fabric&#xa;+ chainmaker&#xa;+ fisco bcos" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1w5Co0Go1dYFcQYBsp4H-54">
+          <mxGeometry y="26" width="170" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="1w5Co0Go1dYFcQYBsp4H-63" value="FabricOrgUserRole" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1370" y="720" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="1w5Co0Go1dYFcQYBsp4H-64" value="+ admin&#xa;+ member" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1w5Co0Go1dYFcQYBsp4H-63">
+          <mxGeometry y="26" width="140" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="1w5Co0Go1dYFcQYBsp4H-67" value="ChainmakerOrgUserRole" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1370" y="800" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="1w5Co0Go1dYFcQYBsp4H-68" value="+ admin&#xa;+ member" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1w5Co0Go1dYFcQYBsp4H-67">
+          <mxGeometry y="26" width="150" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="1w5Co0Go1dYFcQYBsp4H-69" value="FiscoBcosOrgUserRole" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1370" y="900" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1w5Co0Go1dYFcQYBsp4H-70" value="+ user" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1w5Co0Go1dYFcQYBsp4H-69">
+          <mxGeometry y="26" width="140" height="34" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
