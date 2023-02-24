@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-02-24T06:34:33.736Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41" etag="bpfw9tanPPgeg61cryI3" version="20.8.23" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2023-02-24T06:35:42.126Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41" etag="3kgrQ9QFosqnWlxDVB6a" version="20.8.23" type="github" pages="2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="2565" dy="1595" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -212,17 +212,29 @@
         <mxCell id="VV3iAjv9le8pIiTt0zqh-24" value="+ saveApplicationForm():保存申请单&#xa;+ queryApplicationFormList():查询申请单列表&#xa;+ queryApplication():查询申请单详情&#xa;+ updateApplication():更新申请单&#xa;+ deleteApplication():删除申请单" style="text;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="VV3iAjv9le8pIiTt0zqh-21">
           <mxGeometry y="128" width="240" height="82" as="geometry" />
         </mxCell>
-        <mxCell id="VV3iAjv9le8pIiTt0zqh-25" value="ConsensusConfigure:共识配置" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+        <mxCell id="VV3iAjv9le8pIiTt0zqh-25" value="ConsensusConfigure:共识配置" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="500" y="630" width="200" height="150" as="geometry" />
         </mxCell>
-        <mxCell id="VV3iAjv9le8pIiTt0zqh-26" value="- genesisConfigId:共识配置唯一标识&#xa;- chainId:链唯一标识&#xa;- content:共识配置内容    " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="VV3iAjv9le8pIiTt0zqh-25">
+        <mxCell id="VV3iAjv9le8pIiTt0zqh-26" value="- genesisConfigId:共识配置唯一标识&#xa;- chainId:链唯一标识&#xa;- content:共识配置内容    " style="text;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="VV3iAjv9le8pIiTt0zqh-25">
           <mxGeometry y="26" width="200" height="54" as="geometry" />
         </mxCell>
-        <mxCell id="VV3iAjv9le8pIiTt0zqh-27" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="VV3iAjv9le8pIiTt0zqh-25">
+        <mxCell id="VV3iAjv9le8pIiTt0zqh-27" value="" style="line;strokeWidth=1;fillColor=#f8cecc;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#b85450;" vertex="1" parent="VV3iAjv9le8pIiTt0zqh-25">
           <mxGeometry y="80" width="200" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="VV3iAjv9le8pIiTt0zqh-28" value="+ saveConfig():保存共识配置&#xa;+ queryConfig():查询共识配置&#xa;+ updateConfig():更新共识配置" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="VV3iAjv9le8pIiTt0zqh-25">
+        <mxCell id="VV3iAjv9le8pIiTt0zqh-28" value="+ saveConfig():保存共识配置&#xa;+ queryConfig():查询共识配置&#xa;+ updateConfig():更新共识配置" style="text;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="VV3iAjv9le8pIiTt0zqh-25">
           <mxGeometry y="88" width="200" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="VV3iAjv9le8pIiTt0zqh-29" value="ChainGenesisConfigure:创世配置" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="870" y="650" width="250" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="VV3iAjv9le8pIiTt0zqh-30" value="- genesisConfigId:创世配置唯一标识&#xa;- chainId:链唯一标识&#xa;- genesisBlockFileId:创世块文件唯一标识" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="VV3iAjv9le8pIiTt0zqh-29">
+          <mxGeometry y="26" width="250" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="VV3iAjv9le8pIiTt0zqh-31" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="VV3iAjv9le8pIiTt0zqh-29">
+          <mxGeometry y="80" width="250" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="VV3iAjv9le8pIiTt0zqh-32" value="+ saveConfig():保存链创世配置&#xa;+ queryConfig():查询链创世配置&#xa;+ updateConfig():更新链创世配置" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="VV3iAjv9le8pIiTt0zqh-29">
+          <mxGeometry y="88" width="250" height="52" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
